@@ -2,7 +2,6 @@
 Introducción
 Este manual describe la estructura y el funcionamiento de la base de datos del colegio, que incluye información sobre los cursos, los alumnos, los profesores del colegio.
 
-# Estructura
 La base de datos del colegio se compone principalmente de las siguientes entidades:
 
 Miembros del Colegio: Esta entidad representa a todos los miembros del colegio, incluyendo alumnos, profesores y cualquier otro personal. La clase MiembroColegio proporciona los atributos comunes a todos los miembros, como DNI, nombre, dirección, teléfono, fecha de nacimiento y correo electrónico.
@@ -12,8 +11,6 @@ Alumnos: La clase Alumnos extiende la clase MiembroColegio y agrega atributos es
 Profesores: La clase Profesores también extiende la clase MiembroColegio y agrega atributos específicos para los profesores. Al igual que la clase Alumnos, incluye métodos para obtener información sobre los profesores.
 
 Cursos: Hay dos tipos de cursos en la base de datos: cursos presenciales y cursos virtuales. Ambos tipos de curso implementan la interfaz Curso. Cada curso tiene un nombre, una capacidad máxima de estudiantes y un estado (activo o inactivo). Los cursos presenciales también tienen un número de aula, mientras que los cursos virtuales tienen una URL asociada.
-
-# Funcionamiento
 
 El funcionamiento básico de la base de datos del colegio implica la creación y gestión de cursos, así como la matriculación de alumnos y la asignación de profesores a los cursos. A continuación se describen algunas de las operaciones principales:
 
@@ -25,5 +22,4 @@ Eliminar un Curso: Cuando un curso ya no es válido o se ha completado, se puede
 
 Consultar Información: Se pueden consultar detalles sobre los cursos, alumnos y profesores utilizando los métodos toString proporcionados por cada clase, así como otros métodos específicos para obtener información detallada.
 
-# Conclusiones
 La base de datos del colegio proporciona una estructura flexible para gestionar información sobre los cursos, alumnos y profesores. Con las clases y relaciones definidas, es posible llevar a cabo operaciones como la creación de cursos, la matriculación de alumnos y la asignación de profesores de manera eficiente y organizada.
