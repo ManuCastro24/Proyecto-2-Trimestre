@@ -2,7 +2,7 @@
 Introducción
 Este manual describe la estructura y el funcionamiento de la base de datos del colegio, que incluye información sobre los cursos, los alumnos, los profesores del colegio.
 
-# Estructura de la Base de Datos
+# Estructura
 La base de datos del colegio se compone principalmente de las siguientes entidades:
 
 Miembros del Colegio: Esta entidad representa a todos los miembros del colegio, incluyendo alumnos, profesores y cualquier otro personal. La clase MiembroColegio proporciona los atributos comunes a todos los miembros, como DNI, nombre, dirección, teléfono, fecha de nacimiento y correo electrónico.
@@ -13,18 +13,8 @@ Profesores: La clase Profesores también extiende la clase MiembroColegio y agre
 
 Cursos: Hay dos tipos de cursos en la base de datos: cursos presenciales y cursos virtuales. Ambos tipos de curso implementan la interfaz Curso. Cada curso tiene un nombre, una capacidad máxima de estudiantes y un estado (activo o inactivo). Los cursos presenciales también tienen un número de aula, mientras que los cursos virtuales tienen una URL asociada.
 
-# Relaciones entre Entidades
-Las relaciones principales entre las entidades son las siguientes:
-
-Herencia: La clase Alumnos y la clase Profesores heredan atributos y métodos de la clase MiembroColegio.
-
-Composición: La clase Alumnos se compone de los atributos heredados de MiembroColegio, lo que significa que un alumno está formado por sus datos personales.
-
-Agregación: Tanto los cursos presenciales como los cursos virtuales pueden tener varios alumnos matriculados. Esta relación se representa mediante la agregación, ya que los cursos contienen una lista de alumnos matriculados.
-
-Asociación: Los alumnos pueden estar matriculados en varios cursos, y los profesores pueden enseñar varios cursos. Esta relación se representa mediante asociaciones bidireccionales entre las entidades Alumnos, Profesores y Cursos.
-
 # Funcionamiento
+
 El funcionamiento básico de la base de datos del colegio implica la creación y gestión de cursos, así como la matriculación de alumnos y la asignación de profesores a los cursos. A continuación se describen algunas de las operaciones principales:
 
 Crear un Curso: Para crear un curso, se instancia un objeto de la clase CursoPresencial o CursoVirtual con los parámetros adecuados, como el nombre del curso, la capacidad máxima de estudiantes y otros detalles específicos del tipo de curso.
